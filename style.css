@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --shadow-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
@@ -22,6 +23,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -39,6 +41,66 @@ body * {
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
+}
+
+header {
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 24px;
+}
+
+/* cards */
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+  gap: 16px;
+}
+
+#cards .card {
+  width: 180px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  background: linear-gradient(var(--surface-color) 0 0) no-repeat var(--p, 200%)
+    100% / 200% var(--p, 0.08em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+#cards .card:hover {
+  --p: 100%;
+  --t: 0.3s;
+}
+
+#cards img {
+  width: 112px;
+}
+
+#cards p {
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /* profile */
@@ -175,6 +237,10 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+
+  #cards {
+    flex-direction: row;
   }
 }
 

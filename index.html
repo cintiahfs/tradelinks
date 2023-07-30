@@ -7,67 +7,44 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevLinks</title>
+    <title>TradeLinks</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <div id="container">
-      <div id="profile">
-        <img
-          src="./assets/avatar.png"
-          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo."
-        />
-        <p>@maykbrito</p>
+      <header>
+        <h1 class="title">Cartões de Visita Virtuais</h1>
+        <h2 class="subtitle">Escolha um perfil para visualizar</h2>
+      </header>
+      <div id="cards">
+        <div class="card">
+          <img
+            src="./assets/avatar.png"
+            alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo."
+            class="profile_1"
+          />
+          <p>@maykbrito</p>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/avatar-2.png"
+            alt="Foto de Cíntia Segóvia sorrindo, usando jaqueta azul escuro, com fundo branco."
+            class="profile_2"
+          />
+          <p>@cintiahfs</p>
+        </div>
       </div>
-
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
-
-      <ul>
-        <li>
-          <a href="#">Inscrever-se no NLW</a>
-        </li>
-
-        <li>
-          <a href="#">Baixar meu e-book</a>
-        </li>
-
-        <li>
-          <a href="https://github.com/maykbrito">Ver meu portfólio</a>
-        </li>
-
-        <li>
-          <a href="https://rocketseat.com.br/explorer" target="_blank"
-            >Conheça o Explorer</a
-          >
-        </li>
-      </ul>
-      <div id="social-links">
-        <a href="https://github.com/maykbrito" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-
-        <a href="https://instagram.com/maykbrito" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-
-        <a href="https://youtube.com/maykbrito" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-
-        <a href="https://linkedin.com/in/maykbrito" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
-
-      <footer>
-        Feito com ♥ pela <a href="https://rocketseat.com.br/">Rocketseat</a>
+      <footer class="main">
+        Feito com <i class="ph-fill ph-heart"></i> por
+        <a href="/profile_2.html">Cíntia Segóvia</a>
       </footer>
     </div>
 
