@@ -28,7 +28,6 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
 }
 
 body * {
@@ -48,7 +47,6 @@ header {
   text-align: center;
   padding: 8px 0;
 }
-
 .title {
   display: flex;
   justify-content: center;
@@ -229,6 +227,10 @@ footer {
   font-size: 14px;
 }
 
+footer.main {
+  padding: 56px 0 24px;
+}
+
 /* media queries */
 @media (min-width: 700px) {
   :root {
@@ -241,6 +243,12 @@ footer {
 
   #cards {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    height: 100vh;
   }
 }
 
