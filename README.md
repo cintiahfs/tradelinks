@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O TradeLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado online](https://cintiahfs.github.io/tradelinks)
+- [Acesse o projeto finalizado online](https://tradelinks.vercel.app)
 
 ## 🔖 Layout
 
